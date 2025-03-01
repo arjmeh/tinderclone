@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Find Your Type</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <h1>Find Your Type</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- Main Content - Login Form -->
+        <main>
+            <div class="auth-container">
+                <div class="auth-card">
+                    <h2>Welcome Back</h2>
+                    <p>Sign in to continue discovering your type</p>
+                    
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        
+                        <div class="form-group remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-full">Sign In</button>
+                    </form>
+                    
+                    <div class="auth-divider">
+                        <span>or</span>
+                    </div>
+                    
+                    <div class="social-auth">
+                        <button class="btn-social btn-google">
+                            <i class="fab fa-google"></i>
+                            Sign in with Google
+                        </button>
+                        <button class="btn-social btn-facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            Sign in with Facebook
+                        </button>
+                    </div>
+                    
+                    <div class="auth-footer">
+                        <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Find Your Type. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

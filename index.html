@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Type</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <h1>Find Your Type</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html" id="loginBtn">Login</a></li>
+                    <li><a href="register.html" id="registerBtn" class="btn-primary">Sign Up</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- Main Content - Swiping Interface -->
+        <main>
+            <div class="swipe-container">
+                <div class="card-container">
+                    <div class="card current-card">
+                        <div class="card-img">
+                            <img src="https://via.placeholder.com/400x600" alt="Profile Image">
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-no"><i class="fas fa-times"></i></button>
+                            <button class="btn-surprise"><i class="fas fa-dice"></i></button>
+                            <button class="btn-yes"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swipe-info">
+                    <p>Swipe right if you like what you see, left if you don't</p>
+                    <p>We'll learn your preferences over time</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Find Your Type. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
