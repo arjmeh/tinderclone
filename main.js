@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         menuToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
         });
+    setTimeout(loadNextImage, 500);
     }
     
     // Swiping functionality
@@ -17,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Sample placeholder images (in a real app, these would come from an API)
     const placeholderImages = [
-        'https://via.placeholder.com/400x600/ff9999/ffffff?text=Person+1',
-        'https://via.placeholder.com/400x600/99ff99/ffffff?text=Person+2',
-        'https://via.placeholder.com/400x600/9999ff/ffffff?text=Person+3',
-        'https://via.placeholder.com/400x600/ffff99/ffffff?text=Person+4',
-        'https://via.placeholder.com/400x600/ff99ff/ffffff?text=Person+5'
+        'https://i.pinimg.com/736x/e1/85/8a/e1858a8e4ae724e342b64aeb84286bd1.jpg',
+        'https://i.pinimg.com/736x/c3/32/e2/c332e242354b3d4d9a864dbdd4b9aa7a.jpg',
+        'https://i.pinimg.com/736x/ac/d6/5c/acd65cbcfe3f1973ffc009f78891efa2.jpg',
+        'https://static.wikia.nocookie.net/euphoria-hbo/images/8/8e/Zendaya.2.jpg/revision/latest?cb=20220127161803',
+        'https://i.redd.it/j2v513wesp0b1.jpg'
     ];
     
     let currentImageIndex = 0;
